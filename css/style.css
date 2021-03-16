@@ -13,3 +13,175 @@ body{
     width: 100%;
     height: 50px;
 }
+/* - - - - - - - - - - - gestion du contenaire - - - - - - */
+#etre-performant{
+    background-color: blue;
+}
+.container{
+    background-color: aqua;
+}
+.contenent_head{
+    background-color: red;
+    text-align: center;
+}
+h2{
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.contenent_head h3{
+    text-transform: uppercase;
+    width: 96%;
+    display: block;
+    margin: 0 2%;
+    padding: 0;
+    font-size: 45px;
+    color: #1d1d1d;
+    font-family: Armour_W_XBd,Arial,sans-serif;
+    font-weight: 200;
+    line-height: 1;
+    text-transform: none;
+}
+.contenent_button{
+    background-color: chartreuse;
+    font-size: 0;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+.contenent_button a{
+    transition: all .5s ease;
+    display: inline-block;
+    font-family: Armour_W_Bd,Arial,sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    color: #1d1d1d;
+    border: 2px solid #1d1d1d;
+    padding: 11.5px 20px;
+    margin: 10px 8px 0;
+    border-radius: 4px;
+    text-decoration: none;
+}
+.contenent_button a:hover{
+    background-color: black;
+    color: white;
+}
+/* - - - - - - - - - - - - gestion bloc image - - - - - - -*/
+.bloc_card{
+    background-color: rgb(127, 0, 139);
+    display: flex;
+    
+}
+.bloc_column{
+    width: 33%;  
+  
+}
+.card{
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+.card:hover button{
+    opacity: 1;  
+}
+.card:hover .calque{
+    opacity: 0.5;
+}
+.calque{
+    position: absolute;
+    top :0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: black;
+    opacity: 0;
+    transition: all .5s ease;
+}
+
+
+button{
+    position: absolute;
+    opacity: 0;
+    background-color: rgba(255, 255, 255, 0);
+    transition: all .5s ease;
+    font-family: Armour_W_Bd,Arial,sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    color: white;
+    border: 2px solid white;
+    padding: 11.5px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    transform: translate(50%, 100px);
+}
+button:hover{
+    color: #000000;
+    background-color: rgb(255, 255, 255);
+
+}
+img{
+
+    max-width: 100%;
+    height: auto;
+    vertical-align: bottom;
+    margin: 0 auto;
+    border: 0;  
+}
+.bloc_card .bloc_column:nth-child(2){
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.paragraph{
+    text-align: center;
+    display: block;
+    margin: 40px auto 0;
+    max-width: 450px;
+    width: 90%;
+}
+h3{
+    text-transform: uppercase;
+    font-family: Armour_W_XBd,Arial,sans-serif;
+    font-size: 25px;
+    margin: 10px 0 5px;
+}
+p{
+    line-height: 1;
+    display: block;
+    margin-block-start: 1.33em;
+    margin-block-end: 1.33em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    margin-top: 15px;
+    line-height: 16px;
+    font-family: Armour_W_Rg,Arial,sans-serif;
+    font-size: 16px;
+    text-align: center;
+}
+/* - - - - - - - bloc navigation - - - - - - - - -*/
+.navigation_bloc{
+    display: flex;
+
+}
+.column_nav h2{
+    display: block;
+    font-size: 1.6em;
+    font-family: Armour_W_Bd,Arial,sans-serif;
+    font-weight: 400;
+    margin-left: 60px;
+  
+}
+.column_nav_list ul:first-child{
+    margin-left: 7%;
+}
+.column_nav_list{
+    display: inline-block;
+    text-align: left;
+    vertical-align: top; 
+}
+ul{
+    list-style-type: none;
+    display: block;
+    max-width: 90%;
+    margin-bottom: 20px;
+}
