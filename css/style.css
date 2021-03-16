@@ -67,7 +67,7 @@ h2{
     background-color: black;
     color: white;
 }
-/* - - - - - - - - - - - - gestion bloc image - - - - - - -*/
+/* - - - - - - - - - - - - gestion bloc image desktop- - - - - - -*/
 .bloc_card{
     background-color: rgb(127, 0, 139);
     display: flex;
@@ -158,7 +158,7 @@ p{
     font-size: 16px;
     text-align: center;
 }
-/* - - - - - - - bloc navigation - - - - - - - - -*/
+/* - - - - - - - bloc navigation desktop- - - - - - - - -*/
 .navigation_bloc{
     display: flex;
 
@@ -184,4 +184,10 @@ ul{
     display: block;
     max-width: 90%;
     margin-bottom: 20px;
+} 
+/* - - - - - - - - - - carroussel desktop- - - - - - - - - - - - - - - */
+
+.tendance{
+    display: flex;
+    flex-direction: column;
 }
