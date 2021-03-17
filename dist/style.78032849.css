@@ -13,8 +13,68 @@ body{
     width: 100%;
     height: 50px;
 }
+
+/*********Acceuil**********/
+#ImgAcceuil{
+    
+    position: relative;
+}
+#txt{
+    width: fit-content;
+    padding: 15px;
+    margin-bottom: 10px;
+    
+}
+
+#txt *{
+    margin: 0;
+    width: fit-content;
+}
+
+#paragrapheAcceuil{
+    width: 38%;
+    height: 30%;
+    position: absolute;
+    /* top: 51%; */
+    right: 2%; 
+    bottom: 19%;
+    /* left: 0; */
+    z-index: 1;
+}
+
+#buttons{
+    
+    display: flex;
+    flex-wrap: wrap;
+}
+#buttons *{
+    background-color: rgb(0, 0, 0);
+    cursor: pointer;
+    font-family:Arial,sans-serif;
+    transition: all .5s ease;
+    font-size: 12px;
+    padding: 10px;
+    margin: 3px;
+    display: inline-block;
+    border-color: #1d1d1d;
+    color: #fff;
+    background-color:#1d1d1d;
+    border: 2px solid, transparent;
+    border-radius: 4px;
+    width: fit-content;
+}
+
+#buttons *:hover {
+    background-color: white;
+    color: black;
+    border: none;
+} 
+/* #acceuil1{
+    position: relative;
+    background-color: salmon;
+}
+
 #img{
-position: relative;
 margin:0%;
 height: auto;
 max-width: 100%;
@@ -45,165 +105,143 @@ vertical-align: bottom;
     top: 52%;
     position: absolute;
 }
-
-
-.btn{
-    cursor: pointer;
-    font-family:Arial,sans-serif;
-    transition: all .5s ease;
-    font-size: 12px;
-    padding: 7px, 10px;
-    margin: 3px;
-    display: inline-block;
-    border-color: #1d1d1d;
-    color: #fff;
-    background-color:#1d1d1d;
-    border: 2px solid, transparent;
-    border-radius: 4px;
-}
-.buttonPartie1 {
+#txtbtn{
     position: absolute;
-    height: 1px;
-    text-align: left;
-    top: 80%;
-    left: 60%;
-    width: 40%;
+    top: 50%;
+    right: 15%;
+    background-color: rgb(31, 76, 211);
+    display: flex;
 }
-input{
-    height: 44px;
+.btnPatie1{
+    display: flex;
+    flex-wrap: wrap;
+}
+*/
+/*****************footer********************/
 
-}
-.footerContentRow{
-    width: 90%;
-    text-align: center;
-    margin: auto;
-    color: #1d1d1d;
-}
-.emailSignupGlobal{
-    display: inline-block;
-    width: 58%;
-}
-#footer footer .footerContentRow{
-    font-family: Arial,sans-serif;
-    width: 93%;
-    text-align: center;
-    margin: auto;
-}
-#footer{
-    border-top: 5px solid #1d1d1d;
-    clear: both;
-    color: #1d1d1d;
-    min-height: 200px;
-    width: auto;
-}
-.footerCols{
-    width: 21%;
-    display: inline-block;
-    vertical-align: top;
-    text-align: left;
-    margin-top: 35px;
-}
-#footer footer .footerCols {
-    width: 21%;
-    display: inline-block;
-    vertical-align: top;
-    text-align: left;
-    margin-top: 35px;
-    
-}
 footer{
-    border-top: 5px solid, #1d1d1d;
-    clear: both;
-    color: #1d1d1d;
-    background-color: rgb(240, 240, 240);
-    min-height: 200px;
-    width: auto;
-    padding: 60px 0;
-    position: relative;
+    background-color: rgb(221,221,221) ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-a{
-    text-decoration: none;
-    color: #666;
-}
-li{
-    font-family: Arial,sans-serif;
-    font-size: 12px;
-    font-weight: 400;
-    margin-top: 15px;
-    list-style: none;
-    text-align: left;
-}
-div{ 
-    font-family: Arial,sans-serif;
-    display: block;
-}
-.elementButton button{
-    cursor: pointer;
-    background-color:#e51b24;
+
+/****************Form******************/
+#ButtonRed{
+    background-color: red;
     color: #fff;
-    font:11px;
-    width: 125px;
-    text-align:center;
-    border-radius: 4px;
-    border:none;
-    
-}
-#footer footer .emailSignupGlobal input[type=email]{
-    display: inline-block;
-    border: 1px solid #ccc;
-    padding-left: 5px;
-    vertical-align: top;
+    padding: 10px;
+    border: none;
     border-radius: 4px;
 }
 
-h3{
-    color: #666;
-    font-size: 22px;
-    text-transform: uppercase;
+#input{
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid black;
 }
 
-h3 a{
-    font-family: Arial,sans-serif;
-    font-size: 13px;
-    color: #1d1d1d;
-}
-.copyright{
-    margin: 40px 40px;
-}
-.copyright a{
-    font-family: Arial,sans-serif;
-    font-size: 11px;
-    color: #1d1d1d;
-}
-.copyright div{
-    font-family: Arial,sans-serif;
-    font-size: 11px;
-    color: #1d1d1d;
-}
-div .linkContent {
-    color: #1d1d1d;
-}
-label{
-    width: 33%;
-    font-family: Arial,sans-serif;
-}
-#footer .social a.logobleu{
-    background-image: url(https://www.underarmour.fr/on/demandware.static/Sites-EU-Site/-/fr_FR/v1615760827679/images/mmrun.svg);
-    
-}
-#footer .social a {
-    width: 50px;
-    height: 50px;
-    margin: 0 2px;
-    display: inline-block;
-    vertical-align: middle;
-    border-radius: 8px;
+#idlabel{
+    font-family: Arial, sans-serif;
+    font-size: 12px;
 }
 
-.social div{
-    font-size: 10px;
+#formfooter{
+    margin-top: 30px;
+}
+
+
+/**************Logo*************/
+#ContainerbuttonBlue{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+#buttonblue{
+    background-color: rgba(221, 221, 221, 0);
+    border: none;
+    padding: 0px;
     text-align: center;
 }
+
+#logoblue{
+    border-radius: 4px;
+    text-align: center;
+}
+
+#pButtonBlue{
+    font-size: 10px;
+    font-family: Arial,sans-serif;
+
+}
+/********Footer Liste*******/
+
+#footerListe{
+    display: flex;
+    flex-direction: row;
+}
+
+#pointDeVente a{
+    font-size: 12px;
+    font-family: Arial, sans-serif;
+    color: black;
+    font-style: bold;
+
+}
+
+#Contact:first-child, #ServiceClient:first-child, #InfoEntreprise:first-child , .h3{
+    font-size: 13px;
+    font-family: Arial,sans-serif;
+    color: black;
+}
+
+#footerListe .h3{
+    color: black;
+}
+
+#pointDeVente *, #Contact *, #ServiceClient *,#InfoEntreprise *{
+    list-style: none;
+    text-decoration: none;
+    color: #5a5a5a;
+
+}
+
+.p1{
+    line-height:5px;
+}
+
+
+#pointDeVente:first-child, #Contact:first-child, #ServiceClient:first-child,#InfoEntreprise:first-child{
+    font-style: bold;
+}
+
+#pointDeVente a:hover, #Contact a:hover, #ServiceClient a:hover,#InfoEntreprise a:hover{
+    color: red;
+}
+
+/********Condition d'utilisation*******/
+
+#conditionUtilisation *{
+    text-decoration: none;
+    color: black;
+    font-size: 11px;
+    font-family: Arial, sans-serif; 
+}
+
+#conditionUtilisation{
+    padding: 60px;
+    margin-right: 39%;
+    
+}
+
+
+
+
+
+
+
 
 
 /*# sourceMappingURL=/style.78032849.css.map */

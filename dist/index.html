@@ -21,25 +21,35 @@
     </header>
 
     <main>
-        <section id="acceuil">
-            <div id="Acceuil">
-                <div id="imageAcceuil">
-                    <img id="img" src="https://underarmour.scene7.com/is/image/Underarmour/SS21_RUN_Flow_OldSite_PRM_Cogen_Up?scl=1" width="100%">
-                </div>
-                <div class="text2_3">
-                    <h3 class="text2">LÉGÈRES. RAPIDES. PERCUTANTES.</h3>
-                    <h4 class="text3">
-                        <br>
-                        UA FLOW VELOCITI WIND
-                    </h4>
-                </div>
-                <div class="bntPartie1">
-                    <button class="btn">ACHETER POUR HOMMES</button>
-                    <button class="btn">ACHETER POUR FEMMES</button>
-                    <button class="btn">EN SAVOIR PLUS</button>
-                </div>
+
+        <section id="ImgAcceuil">
+            <img id="img" src="https://underarmour.scene7.com/is/image/Underarmour/SS21_RUN_Flow_OldSite_PRM_Cogen_Up?scl=1" width="100%">
+            <div id="paragrapheAcceuil"> 
+             <div id="txt">
+                <h3>LÉGÈRES. RAPIDES. PERCUTANTES.</h3>
+                <h4><br>UA FLOW VELOCITI WIND</h4>
+             </div>
+             <div id="buttons">
+                <button>ACHETER POUR HOMMES</button>
+                <button>ACHETER POUR FEMMES</button>
+                <button>EN SAVOIR PLUS</button> 
+             </div>
             </div>
         </section>
+        <!-- <section id="acceuil1">
+            <img id="img"src="https://underarmour.scene7.com/is/image/Underarmour/SS21_RUN_Flow_OldSite_PRM_Cogen_Up?scl=1"width="100%">
+            <div id="txtbtn">
+                <div class="text2_3">
+                    <h3 class="text2">LÉGÈRES. RAPIDES. PERCUTANTES.</h3>
+                    <h4 class="text3"><br>UA FLOW VELOCITI WIND</h4>
+                </div>
+                <div class="btnPartie1">
+                    <button class="btn">ACHETER POUR HOMMES</button>
+                    <button class="btn">ACHETER POUR FEMMES</button>
+                    <button class="btn">EN SAVOIR PLUS</button>  
+                </div>
+            </div>
+        </section> -->
 
         <section id="meilleur-ventes">
 
@@ -50,145 +60,92 @@
         </section>
 
     </main>
-    <div id="footer">
-    <footer>
-            <div class="footerContentRow">
-                <form action="#" class="emailSignupGlobal">
-
-                    <div class="footerEmail" data-required-text="Utilise une adresse e-mail valide s'il te plaît">
-                        <div class="labelInput">
-                            <label class="signUpLabel">Inscrit-toi et reçois nos e-mails
-                            </label>
-                            <input type="email" class="stopScroll" placeholder="Entre ton adresse e-mail" required="" data-errormessage="L'adresse e-mail saisie n'est pas valide.Veuillez entrer une adresse e-mail valide.">
-                            <label classe="message" style="display: none;"></label>
-                        </div>
-                    </div>
-            </form></div>
-            <div class="elementButton">
-                <button type="submit" name="emailSubmit">
-                    <span>Recevoir nos e-mails</span>&nbsp;
-                </button>
-            </div>
-            
-            <div class="footerContactCountry"></div>
-            <div class="social">
-                <a href="http://www.mapmyrun.com/redirect/device/?desktop=http://www.mapmyrun.com/&ios=https://itunes.apple.com/app/id291890420&android=https://play.google.com/store/apps/details?id=com.mapmyrun.android2" class="logobleu"></a>
-                <div>La plus vaste communauté de fitness dans le monde</div>
-            </div>
-    
-    <div class="footerContent">
-        <div id="footerLink">
-            <div class="linkContent">
+    <!-- <div id="footer"> -->
+    <footer id="footer">
+        <form id="formfooter" action="email">
+            <label id="idlabel" for="email">Inscrit-toi et reçois nos e-mails</label>
+            <input id="input" type="text" placeholder="Entre ton adresse email">
+            <button id="ButtonRed">Recevoir nos e-mails <span id="fleche">&#8227;</span></button>
+        </form>
+        <div id="ContainerbuttonBlue">
+            <button id="buttonblue"> <img id="logoblue" src="https://www.underarmour.fr/on/demandware.static/Sites-EU-Site/-/fr_FR/v1615760827679/images/mmrun.svg" alt=""></button>
+            <p id="pButtonBlue">La plus vaste communauté de fitness dans le monde</p>
+        </div>
+        <div id="footerListe">
+            <div id="pointDeVente">
                 <ul>
-                    <li>
-                        <a href="https://www.underarmour.fr/fr-fr/store-locator">
-                            <svg xmlns="http://www.w3.org/2000/svg">
-                                <use xlink:href="#icon-mapmarker">
-                                    <use xlink:href="#icon-mapmarker">
-                                    </use>
-                            </use></svg>
-                            Point de vente
-                        </a>
+                    <li><a href="https://www.underarmour.fr/fr-fr/store-locator"></a>
+                        <p class="h3">Point de vente</p>
                     </li>
                     <li>
-                        <a href="https://www.underarmour.fr/fr-fr/my-order-history">
-                            <svg xmlns="http://www.w3.org/2000/svg">
-                                <use xlink:href="#icon-cube"> 
-                                </use>
-                            </svg>
-                            Suivre une commande
-                        </a>
+                        <a href="https://www.underarmour.fr/fr-fr/my-order-history"></a>
+                        <p class="h3">Suivre ma commande</p>
                     </li>
                 </ul>
             </div>
-        </div>
-
-        <div class="footerCols">
-            <div class="linkContent">
-                <h3>
-                    <a href="https://www.underarmour.fr/fr-fr/contact-us/contact-us.html">Contact</a>
-                </h3>
+            <div id="Contact">
                 <ul>
+                    <li>
+                        <h3> <a class="h3" href="https://www.underarmour.fr/fr-fr/contact-us/contact-us.html">Contact</a></h3>
+                    </li>
                     <li>
                         <a class="footer-contact-country" href="https://www.underarmour.fr/on/demandware.store/Sites-EU-Site/fr_FR/Page-Show?cid=change-region"></a>
+                        <span class="h3">Chat live</span>
+                        <p class="p1"> Lundi - Vendredi 8:00 - 22:00</p>
+                        <p class="p1"> Samedi & Dimanche 9:00 - 22:00</p>
                     </li>
                     <li>
-                        <div>Chat live</div>
-                        <div>Lundi - Vendredi 8:00 - 22:00</div>
-                        <div>Samedi & Dimanche 9:00 - 22:00</div>
+                        <p class="h3">Assistance téléphonique</p>
+                        <a href="tel:00800-82766871">00800-82766871</a>
+                        <p> Du lundi au vendredi, 9:00 - 18:00 </p>
                     </li>
                     <li>
-                        <div>Assistance téléphonique</div>
-                        <div>
-                            <a href="tel:00800-82766871">00800-82766871</a>
-                            "Du lundi au vendredi, 9:00 - 18:00"
-                        </div>
-                    </li>
-                    <li>
-                        <div>Email</div>
-                        <a href="mailto:customerservice.fr@underarmour.com">"customerservice.fr@"
-                            <span style="font-size:0;"> </span>
-                            "underarmour.com"
-                        </a>
+                        <h3 class="h3">Email</h3><a href="mailto:customerservice.fr@underarmour.com">customerservice.fr@<span style="font-size:0;"> </span>underarmour.com</a>
                     </li>
                 </ul>
             </div>
-        </div>
-        <div class="footerCols">
-            <div class="linkContent">
-                <h3>
-                    <a href="https://www.underarmour.fr/fr-fr/customer-service">Service clients
-                    </a>
-                </h3>
+            <div id="ServiceClient">
                 <ul>
-                    <li> <a href="https://www.underarmour.fr/fr-fr/shipping-information.html">Informations d’expédition
-                        </a>
-                    </li>
                     <li>
-                        <a href="https://www.underarmour.fr/fr-fr/returns-and-exchanges.html">Retours
-                        </a>
+                        <h3><a class="h3" href="https://www.underarmour.fr/fr-fr/customer-service">Service clients</a>
+                        </h3>
                     </li>
-                    <li> <a href="https://www.underarmour.fr/fr-fr/faqs.html">FAQ
-                        </a>
-                    </li>
-                    <li><a href="https://www.underarmour.fr/fr-fr/guide-tailles">Guide des tailles
-                        </a>
-                    </li>
-                    <li><a href="https://www.underarmour.fr/fr-fr/sitemap.html">Plan du site
-                        </a>
-                    </li>
+                    <li><a href="https://www.underarmour.fr/fr-fr/shipping-information.html">Informations
+                            d’expédition</a></li>
+                    <li> <a href="https://www.underarmour.fr/fr-fr/returns-and-exchanges.html">Retours</a></li>
+                    <li><a href="https://www.underarmour.fr/fr-fr/faqs.html">FAQ</a></li>
+                    <li><a href="https://www.underarmour.fr/fr-fr/guide-tailles">Guide des tailles</a></li>
+                    <li><a href="https://www.underarmour.fr/fr-fr/sitemap.html">Plan du site</a></li>
                 </ul>
             </div>
-        </div>
-        <div class="footerCols">
-            <div class="linkContent"></div>
-            <h3><a href="http://www.uabiz.com">Infos sur l’entreprise
-                </a>
-            </h3>
-            <ul>
-                <li>
-                    <a href="https://www.underarmour.fr/fr-fr/affilies/affiliates.html">Affiliés
-                    </a>
-                </li>
-                <li>
-                    <a href="https://careers.underarmour.com/" target="_blank">Carrières
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.underarmour.fr/fr-fr/DNA.html">Notre histoire
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.underarmour.fr/fr-fr/offre-etudiants/unidays.html">Offre étudiants
-                    </a>
-                </li>
-            </ul>
-        </div>
+            <div id="InfoEntreprise">
+                <ul>
+                    <li>
+                        <h3><a class="h3" href="http://www.uabiz.com">Infos sur l’entreprise</a></h3>
+                    </li>
+                    <li><a href="https://www.underarmour.fr/fr-fr/affilies/affiliates.html">Affiliés</a></li>
+                    <li><a href="https://careers.underarmour.com/" target="_blank">Carrières</a></li>
+                    <li><a href="https://www.underarmour.fr/fr-fr/DNA.html">Notre histoire</a></li>
+                    <li><a href="https://www.underarmour.fr/fr-fr/offre-etudiants/unidays.html">Offre étudiants</a></li>
+                </ul>
+            </div>
 
-    </div>
+        </div>
+        <div id="conditionUtilisation">
+            <Span class="CU">© 2021 Under Armour, Inc. Tous droits réservés. </Span>
+            <a href="//account.underarmour.com/fr-fr/terms-and-conditions?locale=fr" target="_new">Conditions
+                générales</a>
+            <span>|</span>
+            <a href="//account.underarmour.com/fr-fr/privacy" target="_new">Politique de confidentialité</a>
+            <span>|</span>
+            <a href="//account.underarmour.com/fr-fr/privacy?locale=fr#comment-nous-utilisons-les-outils-de-collecte-de-donn-es-et-la-publicit-en-ligne" target="_new">Politique en matière de cookies</a>
+
+        </div>
+    </footer>
+    <!-- <div class="footerContentRow">
+           
 <div class="copyright">
     
-    <div>
         © 2021 Under Armour, Inc. Tous droits réservés.
     <a href="//account.underarmour.com/fr-fr/terms-and-conditions?locale=fr" target="_new">Conditions générales</a>
     <span>|</span>
@@ -196,11 +153,11 @@
     <span>|</span>
     <a href="//account.underarmour.com/fr-fr/privacy?locale=fr#comment-nous-utilisons-les-outils-de-collecte-de-donn-es-et-la-publicit-en-ligne" target="_new">Politique en matière de cookies</a>
     
-</div>
-</div>
 
-    </footer>
+</div> -->
 
-</div></body>
+
+
+</body>
 
 </html>
