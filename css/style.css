@@ -154,29 +154,39 @@ a{
 .ul-row{
     display: flex;
     flex-direction: row;
+    padding-left: 15%;
+    padding-right: 15%;
 }
 .list-nouveaute{
-    width: 50%;
+    width: 35%;
     margin-top: 10%;
     max-height:0;
-    /* display: none; */
-    transition: all .5s;
-    border-radius:0;
-    background: #444;
-    box-shadow: none;
     border:none;
-    margin:0
+    margin:0;
 }
-#blue{
+.blue{
     display: none;
     text-align: center;
-    width: 50%;
+    width: 100%;
     height: 50px;
-    margin-left: 20%;
+    margin-left: 0;
     padding-top: 1.5%;
 }
 .red{
     display: block;
-    background-color: blueviolet;
+    background-color: white;
+}
+
+/* Media queries */
+
+@media screen and (min-width: 200px) and (max-width: 767px) {
+    .para-center{
+        color: white;
+        margin: left 0;;
+        font-size: 12px;
+        padding-top: 0.5%;
+        width: 70%;
+    }
+
 }
 
