@@ -17,8 +17,11 @@ body{
 /*Section meilleur vente*/
 
 /*Header*/
+#header-vente{
+    margin: 5% 0;
+}
+
 #meilleur-ventes{
-    background-color: purple;
     text-align: center;
 }
 
@@ -35,20 +38,23 @@ body{
     transition: .5s ease;
 }
 
-/**/
+/******************************************/
 #container-vente{
-    background-color: rosybrown;
     display: flex;
     flex-wrap:wrap;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 .card-vente {
-    background-color: rgb(255, 0, 0);
-    width: 40%;
+    width: 49%;
     display: flex;
     flex-direction: column;
-    margin: 10px;
+}
+
+.container-cards-vente-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .container-img{
@@ -67,9 +73,9 @@ body{
     opacity: 0;
     transition: .5s ease;
     background-color: #000000;
-  }
+}
 
-  .fade:hover{
+.fade:hover{
       opacity: 0.5;
   }
 
@@ -89,20 +95,52 @@ body{
     transform: translate(50%,50%);
     transition: .5s ease;
     opacity: 0;
+    z-index: 1;
 }
+
+.button-vente:hover {
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+.container-img:hover .fade{
+    opacity: 0.5;
+}
+
 
 .container-img:hover .button-vente{
     opacity: 1;
 }
 
-/*Faire l'effet overlay
- >Si survol de image alors activer ovelay et afficher bouton
+/******************************************/
+/*Mobile*/
+@media screen and (max-width: 480px){
+    .container-cards-vente-row{
+        display: flex;
+        flex-direction: column;
+        
+    }
 
- Faire un ovelay :Faire mettre une image grise transparente sur une autre image
- > 
+    .card-vente{
+        display: flex;
+        width: 100%;
+        margin-bottom: 25%;
+    }
 
- >
- >
+    .button-vente{
+        order: -1;
+        border: black 1px solid;
+        color: black;
+        position: relative;
+        top: 50%;
+        right: 0;
+        opacity: 1;
+        transform: translate(0,0);
+    }
 
+    #butotn--button{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
 
- */
+}
