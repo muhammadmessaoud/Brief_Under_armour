@@ -92,6 +92,25 @@ function removeFunction6() {
 };
 
 
+let affichage = document.getElementById("affichage")
+let listPays = document.getElementById("list-pays")
+
+affichage.addEventListener("mouseover", addFunction10);
+affichage.addEventListener("mouseleave",removeFunction10);
+listPays.addEventListener("mouseover", addFunction10);
+listPays.addEventListener("mouseleave",removeFunction10);
+
+function addFunction10() {
+  listPays.classList.add("block")
+};
+
+function removeFunction10() {
+    listPays.classList.remove("block")
+};
+
+
+
+
 
 
   

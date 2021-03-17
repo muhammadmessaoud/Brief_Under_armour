@@ -1,9 +1,14 @@
 body{
+    width: 100%;
     margin: 0%;
     font-family: Arial,sans-serif;
 }
 header{
     position: fixed;
+}
+.global-header-container{
+    width: 100%;
+    height: auto;
 }
  .global-container{
     background-color: black;
@@ -25,14 +30,14 @@ header{
     width: 70%;
 }
 .para-left{
+    width: 92%;
     color: white;
     display: flex;
     flex-wrap: nowrap;
     justify-content: left;
-    align-items: left;
     margin: 0 auto;
     font-size: 12px;
-    padding-top: 1.5%;
+    padding-top: 0.5%;
     padding-left: 20%;
 }
 .nav-container{
@@ -64,6 +69,7 @@ header{
     border-radius: 0;
     margin-top: 1%;
     background-color: white;
+    border-left: none;
 }
 .img-btn{
     margin-top: 20%;
@@ -77,11 +83,43 @@ header{
     margin-left: 2.5%;
 }
 .drap{
-    width: 4%;
-    height: 19%;
+    width: 18px;
+    height: 13px;
     margin-right: 7px;
-    margin-top: 1.3%;
+    margin-top: 1%;
     position: relative;
+    align-self: flex-start;
+}
+.autre{
+    margin-left: 10%;
+    margin-top: 35%;
+}
+.aucune{
+    display: none;
+    background-color: red;
+    position: absolute;
+    width: 80px;
+    height: 100%;
+    margin-left: 81%;
+    margin-top: 1.5%;
+}
+.block{
+    background-color: white;
+    display: block;
+}
+.pays{
+    align-self: flex-end;
+}
+.pays:hover{
+    color: #e70033;
+}
+#show-pays{
+    background-color: white;
+    font-size: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
 }
 .next-to-drap{
     width: 20px;
@@ -116,7 +154,9 @@ ul{
 a{
     text-decoration: none;
     color: black;
-    padding: 0.2%;
+}
+a:hover{
+    color: #e70033;
 }
 #nouveaute{
     color: #e70033;
@@ -153,7 +193,9 @@ a{
 }
 .ul-row{
     display: flex;
-    flex-direction: row;
+    /* flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-start; */
     padding-left: 15%;
     padding-right: 15%;
 }
@@ -168,7 +210,7 @@ a{
     display: none;
     text-align: center;
     width: 100%;
-    height: 50px;
+    height: 90px;
     margin-left: 0;
     padding-top: 1.5%;
 }
@@ -176,6 +218,68 @@ a{
     display: block;
     background-color: white;
 }
+.englobe{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+.menu-deroulant{
+    width: 100%;
+    height: auto;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    font-size: 15px;
+    justify-content: space-around;
+    /* justify-content: flex-start; */
+}
+.colonne{
+    width: 100%;
+    height: auto;
+    background-color: white;
+    padding-left: 2%;
+    padding-right: 2%;
+    z-index: 90;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+#colonne-gauche{
+    width: 100%;
+    height: auto;
+    border-right: 1px solid grey ;
+}
+.bas{
+    padding:0;
+    margin: 0;
+    width: 100%;
+    height: auto;
+    background-color: grey;
+}
+/* .left-choice{
+    width: 30%;
+    text-align: left;
+    border-right: 1px solid grey ;
+    font-size: 15px;
+    font-weight: 600;
+}
+.right-choice{
+    width: 70%;
+    margin-left: 20%;
+    padding-left: 17%;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: flex-start;
+    font-weight: 600;
+    font-size: 14px;
+    left: 0;
+    position: absolute;
+}
+.title{
+    width: auto;
+    margin-right: 20%;
+} */
 
 /* Media queries */
 
