@@ -11,7 +11,7 @@ header{
     height: auto;
 }
  .global-container{
-    background-color: black;
+   background-color: black;
     width: 100%;
     height: auto;
     margin: 0 auto;
@@ -378,4 +378,377 @@ a:hover{
     }
 
 }
+
+/* - - - - - - - - - - - gestion du contenaire - - - - - - */
+
+.contenent_head{
+    text-align: center;
+    padding: 60px 0;
+}
+
+.contenent_head h2{
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.contenent_head h3{
+    text-transform: uppercase;
+    width: 96%;
+    display: block;
+    margin: 0 2%;
+    padding: 0;
+    font-size: 45px;
+    color: #1d1d1d;
+    font-family: Armour_W_XBd,Arial,sans-serif;
+    font-weight: 200;
+    text-transform: none;
+}
+
+.contenent_button{
+    font-size: 0;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.contenent_button a{
+    transition: all .5s ease;
+    display: inline-block;
+    font-family: Armour_W_Bd,Arial,sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    color: #1d1d1d;
+    border: 2px solid #1d1d1d;
+    padding: 11.5px 20px;
+    margin: 10px 8px 0;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.contenent_button a:hover{
+    background-color: black;
+    color: white;
+}
+
+/* - - - - - - - - - - - - gestion bloc image desktop- - - - - - -*/
+.bloc_card{
+    display: flex;
+    width: auto;
+}
+
+.bloc_column{
+    width: 33%;  
+}
+
+.bloc_column .card{
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.card:hover button{
+    opacity: 1;  
+}
+
+.card:hover .calque{ /* au hover sur card on applique un effet sur le calque */
+    opacity: 0.5;
+}
+
+.card .calque{
+    position: absolute;
+    top :0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: black;
+    opacity: 0;
+    transition: all .5s ease;
+}
+
+.card button{
+    position: absolute;
+    opacity: 0;
+    background-color: rgba(255, 255, 255, 0);
+    transition: all .5s ease;
+    font-family: Armour_W_Bd,Arial,sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    color: white;
+    border: 2px solid white;
+    padding: 11.5px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    transform: translate(50%, 100px);
+}
+
+.btn-mobile{
+    display: none;
+}
+.card button:hover{
+    color: #000000;
+    background-color: rgb(255, 255, 255);
+    
+}
+
+.bloc_column .card img{
+    
+    max-width: 100%;
+    height: auto;
+    vertical-align: bottom;
+    margin: 0 auto;
+    border: 0;  
+}
+
+.bloc_card .bloc_column:nth-child(2){
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.bloc_column .paragraph{
+    text-align: center;
+    display: block;
+    margin: 40px auto 0;
+    max-width: 450px;
+    width: 90%;
+}
+
+.bloc_column .paragraph h3{
+    text-transform: uppercase;
+    font-family: Armour_W_XBd,Arial,sans-serif;
+    font-size: 16px;
+    margin: 10px 0 5px;
+    font-weight: 900;
+}
+
+.bloc_column .paragraph p{
+    display: block;
+    margin-block-start: 1.33em;
+    margin-block-end: 1.33em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    margin-top: 15px;
+    line-height: 16px;
+    font-family: Armour_W_Rg,Arial,sans-serif;
+    font-size: 16px;
+    text-align: center;
+}
+
+/* - - - - - - - bloc navigation desktop- - - - - - - - -*/
+.navigation_bloc{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+
+}
+
+.column_nav h2{
+    display: block;
+    font-size: 1.6em;
+    font-family: Armour_W_Bd,Arial,sans-serif;
+    font-weight: 900;
+    margin-left: 60px;
+  
+}
+
+.column_nav_list ul:first-child{
+    margin-left: 7%;
+}
+
+.column_nav_list{
+    display: inline-block;
+    text-align: left;
+    vertical-align: top; 
+}
+
+.column_nav_list ul{
+    list-style-type: none;
+    display: block;
+    max-width: 90%;
+    margin-bottom: 20px;
+} 
+
+.column_nav_list a{
+    text-decoration: none;
+    color: black;
+    margin: 0;
+    padding: 1px 0;
+    font-size: 16px;
+    line-height: 1.75;
+    font-weight: 400;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+.column_nav_list a:hover{
+    color: #e70033;
+}
+
+
+/* - - - - - - - - - - carroussel desktop- - - - - - - - - - - - - - - */
+
+.tendance{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 308px;
+    text-align: center;
+}
+
+.container-tendance{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.container-cards-tendance{
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    height: 308px;
+    box-sizing: 70%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card-tendance{
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+
+}
+.button-tendance{
+    background-color: white;
+    border: none;
+    font-size: 35px;
+
+}
+.button-tendance:focus{ 
+    outline-style: none;
+}
+
+.carrou-is-hidden{
+    display: none;
+}
+
+/* - - - - - - - - - media queries navigation bloc - - - - - - - - */
+
+@media screen and (max-width: 767px)
+{
+    /* - - - - -bloc contenaire - - - - */
+
+
+
+
+
+    /* - - - - -bloc image - - - - */
+    #etre-performant{
+        width: 100%;
+    }
+
+    .container{
+        width: 100%;
+    }
+
+    .contenent_button{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .contenent_button a{
+        min-width: calc(40% - 12px);
+        padding-top: 10px;
+        text-align: center;
+        border: 1px solid #1d1d1d;
+        font-family: Armour_W_Bd,Arial,sans-serif;
+        text-decoration: none;
+    }
+    
+
+    /* - - - - - - - - - - - - gestion bloc image desktop- - - - - - -*/
+    .bloc_card{
+        flex-direction: column;
+    }
+
+    .bloc_column{
+        width: 100%;
+        padding: 20px 0;
+        
+    }
+
+    .card:hover button{
+    opacity: 0;  
+    }
+
+    .card:hover .calque{ /* au hover sur card on applique un effet sur le calque */
+    opacity: 0;
+    }
+
+    .card button{
+        
+        top: 62vh;
+        left: 18vw;
+        opacity: 1;
+        color: black;
+        border: 2px solid black;
+        font-weight: 900;
+        display: none;
+    }
+    .btn-mobile{
+        display: flex;
+        justify-content: center;
+    }
+
+    .btn-mobile button{
+        background-color: rgba(255, 255, 255, 0);
+        font-family: Armour_W_Bd,Arial,sans-serif;
+        font-weight: 400;
+        font-size: 13px;
+        color: black;
+        border: 2px solid black;
+        padding: 11.5px 20px;
+        border-radius: 4px;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+
+    .bloc_card .bloc_column:nth-child(2){
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .bloc_card .bloc_column:nth-child(3){
+        padding-bottom: 55px;
+    }
+
+    /* - - - - - bloc navigation - - - - - - -*/
+    .navigation_bloc{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .column_nav h2{
+        background-color: #eee;
+        color: #444;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 15px;
+        transition: 0.4s;
+        margin: 0 auto;
+    }
+
+    .is-hidden{
+        display: none;
+    }
+    
+}
+
+
+
 
