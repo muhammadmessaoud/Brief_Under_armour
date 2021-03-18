@@ -1,18 +1,754 @@
 body{
-    margin: 0%;
-}
-.global-container{
-    background-color: black;
     width: 100%;
-    height: 50px;
+    margin: 0%;
+    font-family: Arial,sans-serif;
+}
+header{
+    position: fixed;
+}
+.global-header-container{
+    width: 100%;
+    height: auto;
+}
+ .global-container{
+   background-color: black;
+    width: 100%;
+    height: auto;
     margin: 0 auto;
     padding: 0;
+    line-height: 18px;
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+.para-center{
+    color: white;
+    margin-left:40%;
+    font-size: 12px;
+    padding-top: 0.5%;
+    width: 70%;
+}
+.para-left{
+    width: 92%;
+    color: white;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: left;
+    margin: 0 auto;
+    font-size: 12px;
+    padding-top: 0.5%;
+    padding-left: 20%;
 }
 .nav-container{
-    border-bottom-style: solid;
+    border-bottom: 1px solid #dfdfdf;
     width: 100%;
     height: 50px;
+    display: flex;
+    flex-direction: row; 
+    flex-wrap: nowrap;
+    padding-bottom: 0.5%;
 }
+.icon{
+    margin-left: 1%;
+}
+#name{
+    margin-top: 1%;
+    width: 12vw;
+    height: 30px;
+    border: 1px solid #dfdfdf;
+    font-size: 13px;
+    color: #000;
+    display: block;
+}
+.button{
+    min-height: auto;
+    height: 30px;
+    width: 33px;
+    border: 1px solid #dfdfdf;
+    border-radius: 0;
+    margin-top: 1%;
+    background-color: white;
+    border-left: none;
+}
+.img-btn{
+    margin-top: 20%;
+    width: 80%;
+    height: 60%;
+}
+.shopping-icon{
+    width: 25px;
+    height: 25px;
+    margin-top: 1%;
+    margin-left: 2.5%;
+}
+.drap{
+    width: 18px;
+    height: 13px;
+    margin-right: 7px;
+    margin-top: 1%;
+    position: relative;
+    align-self: flex-start;
+}
+.autre{
+    margin-left: 10%;
+    margin-top: 35%;
+}
+.aucune{
+    display: none;
+    background-color: red;
+    position: absolute;
+    width: 80px;
+    height: 100%;
+    margin-left: 81%;
+    margin-top: 1.5%;
+}
+.block{
+    background-color: white;
+    display: block;
+}
+.pays{
+    align-self: flex-end;
+}
+.pays:hover{
+    color: #e70033;
+}
+#show-pays{
+    background-color: white;
+    font-size: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+.next-to-drap{
+    width: 20px;
+    height: 17px;
+}
+ul{
+    list-style:none;
+}
+.list-relou{
+    width: 50%;
+    list-style: none;
+    background:white;
+    padding:0;
+    margin:0;
+    text-align: center;
+}
+#bonnesaffaires{
+    width: 100%;
+}
+.text-icon{
+    width: 40%;
+    text-align: center;
+    justify-content: center;
+    margin-left: 22%;
+    margin-right: 10%;
+    margin-top: 1.4%;
+    display: flex;
+    flex-direction: row;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color: #e70033;
+}
+#nouveaute{
+    color: #e70033;
+}
+#nouveaute:hover{
+    color: #e70033;
+    border-bottom:4px solid #e70033 ;
+    padding-bottom: 16px;
+}
+#chaussures:hover{
+    color: #e70033;
+    border-bottom:4px solid #e70033 ;
+    padding-bottom: 16px;
+}
+#homme:hover{
+    color: #e70033;
+    border-bottom:4px solid #e70033 ;
+    padding-bottom: 16px;
+}
+#femme:hover{
+    color: #e70033;
+    border-bottom:4px solid #e70033 ;
+    padding-bottom: 16px;
+}
+#enfant:hover{
+    color: #e70033;
+    border-bottom:4px solid #e70033 ;
+    padding-bottom: 16px;
+}
+#bonnesaffaires:hover{
+    color: #e70033;
+    border-bottom:4px solid #e70033 ;
+    padding-bottom: 16px;
+}
+.ul-row{
+    display: flex;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+.list-nouveaute{
+    width: 35%;
+    margin-top: 10%;
+    max-height:0;
+    border:none;
+    margin:0;
+}
+.blue{
+    display: none;
+    text-align: center;
+    width: 100%;
+    height: 90px;
+    margin-left: 0;
+    padding-top: 1.5%;
+}
+.red{
+    display: block;
+    background-color: white;
+}
+.englobe{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+.menu-deroulant{
+    width: 100%;
+    height: auto;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    font-size: 15px;
+    justify-content: space-around;
+    /* justify-content: flex-start; */
+}
+.colonne{
+    width: 100%;
+    height: auto;
+    background-color: white;
+    padding-left: 2%;
+    padding-right: 2%;
+    z-index: 90;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+#colonne-gauche{
+    width: 100%;
+    height: auto;
+    border-right: 1px solid #ccc;
+}
+.bas{
+    padding-top:0;
+    margin-top: 0;
+    width: 100%;
+    height: 100px;
+    height: auto;
+    background-color: grey;
+    z-index: 90;
+    position: relative;
+}
+.contenu-bas{
+    width: 100%;
+    height: 20px;
+    background-color: #ccc;
+    padding-top: 0;
+    margin-top: 0;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#decouvre-red{
+    position: absolute;
+    text-align: center;
+}
+.text-rouge{
+    color: #e70033;
+}
+.list-nouveaute:hover{
+    color: #e70033;
+}
+.survol-rouge:hover{
+    color: #e70033;
+}
+ .nav-mobile{
+    display: none;
+}
+.mobile-contenu{
+    display: none;
+}
+
+/* Media queries */
+
+@media screen and (max-width: 767px) {
+    .nav-container{
+        display: none;
+    }
+    .para-left{
+        display: none;
+    }
+    .aucune{
+        display: none;
+    }
+    .nav-mobile{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom:1px solid #dfdfdf;
+    }
+    .img-btn{
+        width: 1.5em;
+        height: 1.5em;
+        margin: 0;
+    }
+    .menu-recherche{
+        display: flex;
+        width: 30%;
+        align-items: center;
+        justify-content: center;
+        margin: 0 10px;
+    }
+    .fas{
+        font-size: 1.5em;
+        margin: 0 10px;
+    }
+    .user-panier{
+        width: 30%;
+        display: flex;
+        justify-content: center;
+    }
+    .bar1, .bar2, .bar3{
+        width: 30px;
+        height: 3px;
+        margin: 6px;
+        background-color: black;
+        transition: 0.4s;
+       }
+       
+       .change .bar1{
+        transform: rotate(-45deg)  translate(-8px, 8px);
+        margin: 0;
+       }
+       
+       .change .bar2{
+        opacity: 0;
+       }
+       
+       .change .bar3{
+        transform: rotate(45deg) translate(-8px, -8px);
+        margin: 0;
+       }
+       #mobile-menu{
+           width: 600px;
+           height: 1000px;
+           display: block;
+       }
+       .mobile-contenu{
+           display: none;
+           width: 100%;
+           height: 32px;
+           background-color: #ebebeb;
+           border-top: 1px solid black;
+           border-right:  1px solid black;
+           padding-top: 2%;
+           padding-left: 2%;
+       }
+       .grey-container{
+        background-color: #ccc;
+        color: white;
+       }
+       .fa-chevron-right{
+           font-size: 1em;
+       }
+    .para-center{
+        color: white;
+        margin: left 0;
+        font-size: 12px;
+        padding-top: 0.5%;
+        width: 70%;
+    }
+
+}
+
+/* - - - - - - - - - - - gestion du contenaire - - - - - - */
+
+.contenent_head{
+    text-align: center;
+    padding: 60px 0;
+}
+
+.contenent_head h2{
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.contenent_head h3{
+    text-transform: uppercase;
+    width: 96%;
+    display: block;
+    margin: 0 2%;
+    padding: 0;
+    font-size: 45px;
+    color: #1d1d1d;
+    font-family: Armour_W_XBd,Arial,sans-serif;
+    font-weight: 200;
+    text-transform: none;
+}
+
+.contenent_button{
+    font-size: 0;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.contenent_button a{
+    transition: all .5s ease;
+    display: inline-block;
+    font-family: Armour_W_Bd,Arial,sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    color: #1d1d1d;
+    border: 2px solid #1d1d1d;
+    padding: 11.5px 20px;
+    margin: 10px 8px 0;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.contenent_button a:hover{
+    background-color: black;
+    color: white;
+}
+
+/* - - - - - - - - - - - - gestion bloc image desktop- - - - - - -*/
+.bloc_card{
+    display: flex;
+    width: auto;
+}
+
+.bloc_column{
+    width: 33%;  
+}
+
+.bloc_column .card{
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.card:hover button{
+    opacity: 1;  
+}
+
+.card:hover .calque{ /* au hover sur card on applique un effet sur le calque */
+    opacity: 0.5;
+}
+
+.card .calque{
+    position: absolute;
+    top :0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: black;
+    opacity: 0;
+    transition: all .5s ease;
+}
+
+.card button{
+    position: absolute;
+    opacity: 0;
+    background-color: rgba(255, 255, 255, 0);
+    transition: all .5s ease;
+    font-family: Armour_W_Bd,Arial,sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    color: white;
+    border: 2px solid white;
+    padding: 11.5px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    transform: translate(50%, 100px);
+}
+
+.btn-mobile{
+    display: none;
+}
+.card button:hover{
+    color: #000000;
+    background-color: rgb(255, 255, 255);
+    
+}
+
+.bloc_column .card img{
+    
+    max-width: 100%;
+    height: auto;
+    vertical-align: bottom;
+    margin: 0 auto;
+    border: 0;  
+}
+
+.bloc_card .bloc_column:nth-child(2){
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.bloc_column .paragraph{
+    text-align: center;
+    display: block;
+    margin: 40px auto 0;
+    max-width: 450px;
+    width: 90%;
+}
+
+.bloc_column .paragraph h3{
+    text-transform: uppercase;
+    font-family: Armour_W_XBd,Arial,sans-serif;
+    font-size: 16px;
+    margin: 10px 0 5px;
+    font-weight: 900;
+}
+
+.bloc_column .paragraph p{
+    display: block;
+    margin-block-start: 1.33em;
+    margin-block-end: 1.33em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    margin-top: 15px;
+    line-height: 16px;
+    font-family: Armour_W_Rg,Arial,sans-serif;
+    font-size: 16px;
+    text-align: center;
+}
+
+/* - - - - - - - bloc navigation desktop- - - - - - - - -*/
+.navigation_bloc{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+
+}
+
+.column_nav h2{
+    display: block;
+    font-size: 1.6em;
+    font-family: Armour_W_Bd,Arial,sans-serif;
+    font-weight: 900;
+    margin-left: 60px;
+  
+}
+
+.column_nav_list ul:first-child{
+    margin-left: 7%;
+}
+
+.column_nav_list{
+    display: inline-block;
+    text-align: left;
+    vertical-align: top; 
+}
+
+.column_nav_list ul{
+    list-style-type: none;
+    display: block;
+    max-width: 90%;
+    margin-bottom: 20px;
+} 
+
+.column_nav_list a{
+    text-decoration: none;
+    color: black;
+    margin: 0;
+    padding: 1px 0;
+    font-size: 16px;
+    line-height: 1.75;
+    font-weight: 400;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+.column_nav_list a:hover{
+    color: #e70033;
+}
+
+
+/* - - - - - - - - - - carroussel desktop- - - - - - - - - - - - - - - */
+
+.tendance{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 308px;
+    text-align: center;
+}
+
+.container-tendance{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.container-cards-tendance{
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    height: 308px;
+    box-sizing: 70%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card-tendance{
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+
+}
+.button-tendance{
+    background-color: white;
+    border: none;
+    font-size: 35px;
+
+}
+.button-tendance:focus{ 
+    outline-style: none;
+}
+
+.carrou-is-hidden{
+    display: none;
+}
+
+/* - - - - - - - - - media queries navigation bloc - - - - - - - - */
+
+@media screen and (max-width: 767px)
+{
+    /* - - - - -bloc contenaire - - - - */
+
+
+
+
+
+    /* - - - - -bloc image - - - - */
+    #etre-performant{
+        width: 100%;
+    }
+
+    .container{
+        width: 100%;
+    }
+
+    .contenent_button{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .contenent_button a{
+        min-width: calc(40% - 12px);
+        padding-top: 10px;
+        text-align: center;
+        border: 1px solid #1d1d1d;
+        font-family: Armour_W_Bd,Arial,sans-serif;
+        text-decoration: none;
+    }
+    
+
+    /* - - - - - - - - - - - - gestion bloc image desktop- - - - - - -*/
+    .bloc_card{
+        flex-direction: column;
+    }
+
+    .bloc_column{
+        width: 100%;
+        padding: 20px 0;
+        
+    }
+
+    .card:hover button{
+    opacity: 0;  
+    }
+
+    .card:hover .calque{ /* au hover sur card on applique un effet sur le calque */
+    opacity: 0;
+    }
+
+    .card button{
+        
+        top: 62vh;
+        left: 18vw;
+        opacity: 1;
+        color: black;
+        border: 2px solid black;
+        font-weight: 900;
+        display: none;
+    }
+    .btn-mobile{
+        display: flex;
+        justify-content: center;
+    }
+
+    .btn-mobile button{
+        background-color: rgba(255, 255, 255, 0);
+        font-family: Armour_W_Bd,Arial,sans-serif;
+        font-weight: 400;
+        font-size: 13px;
+        color: black;
+        border: 2px solid black;
+        padding: 11.5px 20px;
+        border-radius: 4px;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+
+    .bloc_card .bloc_column:nth-child(2){
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .bloc_card .bloc_column:nth-child(3){
+        padding-bottom: 55px;
+    }
+
+    /* - - - - - bloc navigation - - - - - - -*/
+    .navigation_bloc{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .column_nav h2{
+        background-color: #eee;
+        color: #444;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 15px;
+        transition: 0.4s;
+        margin: 0 auto;
+    }
+
+    .is-hidden{
+        display: none;
+    }
+    
+}
+
 
 /*********Acceuil**********/
 #ImgAcceuil{
@@ -295,9 +1031,6 @@ footer{
     font-size: 14px;
     font-family: Arial, sans-serif;
    }
-
-}
-
 
 
 
