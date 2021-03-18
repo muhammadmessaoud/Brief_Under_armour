@@ -157,7 +157,7 @@ body{
 
 /******************************************/
 /*Mobile*/
-@media screen and (max-width: 480px){
+@media screen and (max-width: 777px){
     .container-cards-vente-row{
         display: flex;
         flex-direction: column;
@@ -185,7 +185,7 @@ body{
     .card-vente{
         display: flex;
         width: 100%;
-        margin-bottom: 25%;
+        margin-bottom: 15%;
     }
 
     .button-vente-query{
@@ -201,6 +201,7 @@ body{
         opacity: 1;
         transform: translate(0,0);
         font-weight: bold;
+        margin-top: 15px;
     }
 
     #butotn--button{
