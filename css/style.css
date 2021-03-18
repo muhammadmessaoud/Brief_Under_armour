@@ -1,7 +1,8 @@
 body{
     width: 100%;
     margin: 0%;
-    font-family: Arial,sans-serif;
+    font-family: Armour_W_XBd,Arial,sans-serif;
+
 }
 header{
     position: fixed;
@@ -386,12 +387,44 @@ a:hover{
     padding: 60px 0;
 }
 
-.contenent_head h2{
+.contenent_head h2,#h2Mei{
+    color: #1d1d1d;
     margin-block-start: 0.83em;
     margin-block-end: 0.83em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
 }
+
+/*h3*/
+#h3{
+    font-size: 45px;
+}
+
+/*Section meilleur vente*/
+
+/*Header*/
+#header-vente{
+    margin: 5% 0;
+}
+
+#meilleur-ventes{
+    text-align: center;
+}
+
+.button-vente__header{
+    transition: all .5s ease;
+    display: inline-block;
+    font-family: Armour_W_Bd,Arial,sans-serif;
+    font-weight: 400px;
+    font-size: 13px;
+    color: #1d1d1d;
+    border: 2px solid #1d1d1d;
+    padding: 11.5px 20px;
+    margin: 10px 8px 0;
+    border-radius: 4px;
+    text-decoration: none;
+    background-color: white;
+
 
 .contenent_head h3{
     text-transform: uppercase;
@@ -425,6 +458,164 @@ a:hover{
     margin: 10px 8px 0;
     border-radius: 4px;
     text-decoration: none;
+}
+
+.button-vente__header:hover{
+    color: white;
+    background-color: black;
+    transition: .5s ease;
+    cursor: pointer;
+}
+
+/******************************************/
+#container-vente{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-evenly;
+}
+
+.card-vente {
+    width: 49%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container-cards-vente-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.container-img{
+    position: relative;
+    width: 100%;    
+}
+
+.fade{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #000000;
+}
+
+.fade:hover{
+      opacity: 0.5;
+  }
+
+.image-vente{
+    width: 100%;
+    height: 100%;
+} 
+
+.button-vente{
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 4px;
+    border: 3px white solid;
+    color: white;
+    transform: translate(50%,50%);
+    transition: .5s ease;
+    opacity: 0;
+    z-index: 1;
+    cursor: pointer;
+    font-family: Armour_W_Bd,Arial,sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+}
+
+.nouv{
+    text-transform: uppercase;
+    font-family: Armour_W_XBd,Arial,sans-serif;
+    font-size: 16px;
+}
+
+.para{
+    font-family: Armour_W_Rg,Arial,sans-serif;
+    font-size: 13px;
+}
+
+.button-vente:hover {
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+.container-img:hover .fade{
+    opacity: 0.5;
+}
+
+
+.container-img:hover .button-vente{
+    opacity: 1;
+}
+
+.button-vente-query{
+    display: none;
+}
+
+/******************************************/
+/*Mobile*/
+@media screen and (max-width: 777px){
+    .container-cards-vente-row{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .button-vente-query:hover {
+        background-color: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
+    }
+
+
+
+    .button-vente{
+        display: none;
+    }
+
+    .container-img:hover .fade{
+        opacity: 0;
+    }
+
+    .fade:hover{
+        opacity: 0;
+    }
+
+    .card-vente{
+        display: flex;
+        width: 100%;
+        margin-bottom: 15%;
+    }
+
+    .button-vente-query{
+        display: flex;
+        align-self: center;
+        border: black 1px solid;
+        background-color: white ;
+        text-align: center;
+        color: black;
+        padding: 11.5px 20px;
+        position: relative;
+        right: 0;
+        opacity: 1;
+        transform: translate(0,0);
+        font-weight: bold;
+        margin-top: 15px;
+    }
+
+    #butotn--button{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+}   
+=======
 }
 
 .contenent_button a:hover{
@@ -1031,6 +1222,7 @@ footer{
     font-size: 14px;
     font-family: Arial, sans-serif;
    }
+
 
 
 
