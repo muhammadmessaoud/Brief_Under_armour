@@ -40,7 +40,6 @@ body{
     color: #1d1d1d;
     font-family: Armour_W_XBd,Arial,sans-serif;
     font-weight: 200;
-    line-height: 1;
     text-transform: none;
 }
 
@@ -161,7 +160,6 @@ body{
 }
 
 .bloc_column .paragraph p{
-    line-height: 1;
     display: block;
     margin-block-start: 1.33em;
     margin-block-end: 1.33em;
@@ -178,6 +176,7 @@ body{
 .navigation_bloc{
     display: flex;
     flex-wrap: wrap;
+    justify-content:center;
 
 }
 
@@ -185,7 +184,7 @@ body{
     display: block;
     font-size: 1.6em;
     font-family: Armour_W_Bd,Arial,sans-serif;
-    font-weight: 400;
+    font-weight: 900;
     margin-left: 60px;
   
 }
@@ -206,6 +205,23 @@ body{
     max-width: 90%;
     margin-bottom: 20px;
 } 
+
+.column_nav_list a{
+    text-decoration: none;
+    color: black;
+    margin: 0;
+    padding: 1px 0;
+    font-size: 16px;
+    line-height: 1.75;
+    font-weight: 400;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+.column_nav_list a:hover{
+    color: #e70033;
+}
+
 
 /* - - - - - - - - - - carroussel desktop- - - - - - - - - - - - - - - */
 
@@ -368,7 +384,4 @@ body{
         display: none;
     }
     
-    .column_nav .column_nav_list ul{
-        margin-bottom: -18px;
-    }
 }
