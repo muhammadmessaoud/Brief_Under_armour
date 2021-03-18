@@ -1,0 +1,306 @@
+body{
+    margin: 0%;
+}
+.global-container{
+    background-color: black;
+    width: 100%;
+    height: 50px;
+    margin: 0 auto;
+    padding: 0;
+}
+.nav-container{
+    border-bottom-style: solid;
+    width: 100%;
+    height: 50px;
+}
+
+/*********Acceuil**********/
+#ImgAcceuil{
+    
+    position: relative;
+}
+#imgMobile{
+    display: none;
+}
+#txt{
+    width: fit-content;
+    padding: 15px;
+    margin-bottom: 10px;
+    
+}
+
+#txt *{
+    margin: 0;
+    width: fit-content;
+}
+
+#paragrapheAcceuil{
+    width: 38%;
+    height: 30%;
+    position: absolute;
+    /* top: 51%; */
+    right: 2%; 
+    bottom: 19%;
+    /* left: 0; */
+    z-index: 1;
+}
+
+#buttons{
+    
+    display: flex;
+    flex-wrap: wrap;
+}
+#buttons *{
+    background-color: rgb(0, 0, 0);
+    cursor: pointer;
+    font-family:Arial,sans-serif;
+    transition: all .5s ease;
+    font-size: 12px;
+    padding: 10px;
+    margin: 3px;
+    display: inline-block;
+    border-color: #1d1d1d;
+    color: #fff;
+    background-color:#1d1d1d;
+    border: 2px solid, transparent;
+    border-radius: 4px;
+    width: fit-content;
+}
+
+#buttons *:hover {
+    background-color: white;
+    color: black;
+    border: none;
+} 
+/*****************query********************/
+/*****************footer********************/
+
+footer{
+    background-color: rgb(221,221,221) ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/****************Form******************/
+#idlabel2{
+    display: none;
+}
+#ButtonRed{
+    background-color: red;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+}
+
+#input{
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid black;
+}
+#commentaire{
+    display: none;
+}
+
+#idlabel{
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+}
+
+#formfooter{
+    margin-top: 30px;
+}
+
+
+/**************Logo*************/
+#ContainerbuttonBlue{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+#buttonblue{
+    background-color: rgba(221, 221, 221, 0);
+    border: none;
+    padding: 0px;
+    text-align: center;
+}
+
+#logoblue{
+    border-radius: 4px;
+    text-align: center;
+}
+
+#pButtonBlue{
+    font-size: 10px;
+    font-family: Arial,sans-serif;
+
+}
+/********Footer Liste*******/
+
+#footerListe{
+    display: flex;
+    flex-direction: row;
+}
+
+#pointDeVente a{
+    font-size: 12px;
+    font-family: Arial, sans-serif;
+    color: black;
+    font-style: bold;
+
+}
+
+#Contact:first-child, #ServiceClient:first-child, #InfoEntreprise:first-child , .h3{
+    font-size: 13px;
+    font-family: Arial,sans-serif;
+    color: black;
+}
+
+#footerListe .h3{
+    color: black;
+}
+
+#pointDeVente *, #Contact *, #ServiceClient *,#InfoEntreprise *{
+    list-style: none;
+    text-decoration: none;
+    color: #5a5a5a;
+
+}
+
+.p1{
+    line-height:5px;
+}
+
+
+#pointDeVente:first-child, #Contact:first-child, #ServiceClient:first-child,#InfoEntreprise:first-child{
+    font-style: bold;
+}
+
+#pointDeVente a:hover, #Contact a:hover, #ServiceClient a:hover,#InfoEntreprise a:hover{
+    color: red;
+}
+
+/********Condition d'utilisation*******/
+
+#conditionUtilisation *{
+    text-decoration: none;
+    color: black;
+    font-size: 11px;
+    font-family: Arial, sans-serif; 
+}
+
+#conditionUtilisation{
+    padding: 60px;
+    margin-right: 39%;
+    
+}
+#conditionUtilisationMobile *{
+    display: none;
+}
+
+/*************Version Mobile***************/
+@media screen and (max-width:767px){
+    /************Accceuil***************/
+    #imgAccueil{
+        display: relative;
+    }
+   #img{
+     display: none;  
+   }
+
+   #imgMobile{
+       display: flex;
+       width: 100%;
+   }
+
+   #paragrapheAcceuil{
+       display: flex;
+       flex-direction: row;
+       font-size: 20px;
+   }
+
+   #txt h3{
+        font-size: 26px;
+        font-family: Arial, sans-serif;
+        background-color: #fff;
+        height: 100% auto;
+        margin: 16px 0px 10px ;
+    
+   }
+   #txt h4{
+    font-size: 15px;
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    height: 100% auto;
+    margin: 16px 0px 10px ;
+   }
+
+   #buttons *{
+       font-size: 14px;
+       font-family: Arial,sans-serif;
+       color: #1d1d1d;
+       margin: 0px 6px 12px;
+       padding: 10px;
+       background-color: #fff;
+       border: 1px solid black;
+   }
+
+   #footerListe{
+       display: none;
+   }
+   #idlabel{
+       display: none;
+   }
+   #idlabel2{
+       display: block;
+       color: black;
+       font-size: 16px;
+       font-family: Arial,sans-serif;
+   }
+   #ButtonRed{
+       color: #fff;
+       background-color: black;
+       
+   }
+   #commentaire{
+       display: block;
+       font-size: 16px;
+       font-family: Arial,sans-serif;
+       color: black;
+       padding: 8px 24px;
+
+   }
+
+   #pButtonBlue{
+       font-family: Arial,sans-serif;
+       font-size: 14px;
+       color: black;
+   }
+
+   #conditionUtilisation a {
+       display: none;
+
+   }
+   .sp{
+       display: none;
+   }
+
+   #conditionUtilisationMobile *{
+    display: block;
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+   }
+
+}
+
+
+
+
+
+
+/*# sourceMappingURL=/style.78032849.css.map */
