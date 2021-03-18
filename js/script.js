@@ -109,6 +109,18 @@ function removeFunction10() {
 };
 
 
+const iconBurger = document.getElementById("container-icon-burger");
+let mobileMenu = document.querySelectorAll("mobile-contenu")
+
+iconBurger.addEventListener("click", change,show);
+
+function change() {
+  iconBurger.classList.toggle('change');
+}
+
+function show() {
+  mobileMenu.classList.add("apparais")
+}
 
 
 
