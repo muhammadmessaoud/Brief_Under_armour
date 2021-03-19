@@ -131,12 +131,9 @@ let panel = document.getElementsByClassName("column_nav_list");
 for (let i = 0; i < acc.length; i++) {
   acc[i].addEventListener("click", function() {
     panel[i].classList.toggle("is-hidden");
-})
-}
-
+  })
 
 // - - - - - - - script carroussel - - - - - - - - 
-
 let cards_tendance = document.querySelectorAll(".card-tendance");
 let index = 0;
 let imageActuelle = [];
