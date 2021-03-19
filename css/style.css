@@ -4,9 +4,11 @@ body{
     font-family: Armour_W_XBd,Arial,sans-serif;
 
 }
-/* header{
-    position: fixed;
-} */
+header{
+    position:sticky;
+    top: 0;
+    z-index: 3;
+}
 .global-header-container{
     width: 100%;
     height: auto;
@@ -49,6 +51,10 @@ body{
     flex-direction: row; 
     flex-wrap: nowrap;
     padding-bottom: 0.5%;
+    position:sticky;
+    top: 0;
+    z-index: 1;
+    background-color: white;
 }
 .icon{
     margin-left: 1%;
@@ -103,6 +109,7 @@ body{
     height: 100%;
     margin-left: 81%;
     margin-top: 1.5%;
+    z-index: 5;
 }
 .block{
     background-color: white;
@@ -156,6 +163,7 @@ a{
 }
 a:hover{
     color: #e70033;
+    cursor: pointer;
 }
 #nouveaute{
     color: #e70033;
@@ -459,6 +467,7 @@ a:hover{
     margin: 10px 8px 0;
     border-radius: 4px;
     text-decoration: none;
+    cursor: pointer;
 }
 
 .button-vente__header:hover{
@@ -642,7 +651,8 @@ a:hover{
 }
 
 .card:hover button{
-    opacity: 1;  
+    opacity: 1; 
+    cursor: pointer; 
 }
 
 .card:hover .calque{ /* au hover sur card on applique un effet sur le calque */
@@ -674,6 +684,7 @@ a:hover{
     border-radius: 4px;
     text-decoration: none;
     transform: translate(50%, 100px);
+    cursor: pointer;
 }
 
 .btn-mobile{
@@ -682,6 +693,7 @@ a:hover{
 .card button:hover{
     color: #000000;
     background-color: rgb(255, 255, 255);
+    cursor: pointer;
     
 }
 
